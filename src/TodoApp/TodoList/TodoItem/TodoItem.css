@@ -15,11 +15,11 @@
     justify-content: space-around;
     align-items: center;
 }
-.todo-item input {
+.todo-item-input {
     width: 20px;
     outline: none;
 }
-.todo-item button {
+.todo-item-btn {
     margin-left: auto;
     color: rgb(232, 86, 86);
     padding: 5px 15px;

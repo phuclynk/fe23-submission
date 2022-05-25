@@ -9,7 +9,7 @@
     margin-top: 20px;
     margin-bottom: 40px;
 }
-.todo-add input {
+.todo-add-input {
     width: 65%;
     height: 50%;
     border-radius: 4px;
@@ -17,7 +17,7 @@
     outline: none;
 
 }
-.todo-add button {
+.todo-add-btn {
     width: 30%;
     height: 60%;
     background-color: #1890ff;

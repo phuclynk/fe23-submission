@@ -13,13 +13,13 @@ export function TodoItem() {
 
     return (
         <div className="todo-list-content">
-            {listTodos && listTodos.length > 0 && 
+            {
                 listTodos.map((item,index) => {
                     return (
                         <div className="todo-item" key={index}>
-                            <input type="checkbox" name="" id="" />
+                            <input className="todo-item-input" type="checkbox" name="" id="" />
                             <span>{item.title}</span>
-                            <button><FaTrash /></button>  
+                            <button className="todo-item-btn"><FaTrash /></button>  
                         </div>  
                     )                                     
                 })
