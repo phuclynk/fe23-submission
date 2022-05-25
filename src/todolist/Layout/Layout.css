@@ -1,0 +1,21 @@
+*{
+   font-size: 95%;
+}
+
+:root{
+   --main-color: rgb(240, 240, 240);
+   --line-color: rgb(201, 201, 201);
+}
+
+.container{
+   width: 500px;
+   height: fit-content;
+   padding: 20px;
+   margin: 20px auto;
+   background-color: var(--main-color);
+}
+
+
+
+
+

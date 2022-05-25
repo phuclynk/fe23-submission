@@ -1,0 +1,23 @@
+.container__title{
+   display: flex;
+   justify-content: space-evenly;
+   position: relative;
+   padding: 10px 0 30px;
+}
+.container__title input{
+   width: 62%;
+   height: 20px;
+   padding-left: 30px;
+}
+.container__title__icon{
+   position: absolute;
+   left: 10px;
+   margin: 5px 0;
+}
+.container__title button{
+   width: 30%;
+   border: unset;
+   border-radius: 3px;
+   background-color: rgb(34, 126, 255);
+   color: white;
+}

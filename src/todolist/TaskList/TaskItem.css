@@ -1,0 +1,25 @@
+.container__list__item div{
+   display: flex;
+   height: 30px;
+   border-bottom: 1px solid var(--line-color);
+}
+.container__list__item div:last-child{
+   border-bottom: unset 
+}
+.container__list__item div input{
+   margin: 9px
+}
+.container__list__item div span{
+   flex-basis: 90%;
+   text-align: left;
+   line-height: 30px;
+}
+.container__list__item button{
+   width: 18px;
+   height: 18px;
+   padding: 0;
+   border: unset;
+   border-radius: 3px;
+   margin: 5px;
+   color: red;
+}

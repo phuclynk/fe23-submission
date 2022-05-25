@@ -1,0 +1,14 @@
+.container__list{
+   background-color: white;
+}
+.container__list__title{
+   height: 30px;
+   padding-left: 15px;
+   border-bottom: 1px solid var(--line-color);
+   text-align: left;
+   line-height: 30px;
+   font-weight: 500;
+}
+.container__list__item{
+   padding: 5px;
+}
