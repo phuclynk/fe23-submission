@@ -1,0 +1,7 @@
+.search{
+	float: left;
+}
+.search input{
+	width: 500px;
+	padding: 5px 5px;
+}
