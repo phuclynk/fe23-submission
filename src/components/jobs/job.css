@@ -1,0 +1,63 @@
+.listJobs {
+    position: relative;
+    width: 90%;
+    margin: 2em 0 0 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px rgb(158, 158, 158);
+}
+.listJobs__heading {
+    height: 60px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.listJobs__content {
+    width: 500px;
+    margin-left: 15px;
+    padding: 20px 5px 20px 5px; 
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+.listJobs__content:last-child {
+    border-bottom: none;
+    padding-bottom: 50px;
+}
+.listJobs--check {
+    color: blue;
+}
+.listJobs--check-2 {
+    color: rgb(5, 179, 5);
+}
+.listJobs--text {
+    text-decoration: line-through;
+}
+.listJobs__input {
+    margin: 5px 10px 0 0 ;
+    height: 15px;
+    width: 15px;
+}
+.listJobs--iconSquare {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.listJobs--red {
+    color: red;
+}
+.listJobs--trash {
+    float: right;
+    background-color: rgb(236, 236, 236);
+    color: red;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 7px 20px;
+}
+.listJobs--trash:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    color: green;
+}
