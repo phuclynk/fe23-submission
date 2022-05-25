@@ -1,0 +1,16 @@
+.wrapper-right {
+  width: 50%;
+  margin: 0;
+  position: relative;
+}
+.wrapper-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.fa-solid.fa-equals {
+  font-size: 70px;
+  font-weight: normal;
+  position: absolute;
+  right: 30px;
+}
