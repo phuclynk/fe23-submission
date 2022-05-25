@@ -1,0 +1,10 @@
+.task-item {
+  border-bottom: solid 1px #d2d2d2;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.label-task-name {
+  margin-left: 20px;
+}
