@@ -9,7 +9,7 @@ function App(props) {
   return (
     <div className="App">
       <Layout />
-      {/* <Page /> */}
+      <Page />
     </div>
   );
 }

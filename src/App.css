@@ -1,5 +1,8 @@
 /* @import './2305style/2305.css'; */
 
+body{
+  background-color: #e0e0e0;
+}
 .App {
   text-align: center;
 }
