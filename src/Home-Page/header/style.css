@@ -1,0 +1,16 @@
+.header{
+display: flex;
+justify-content: space-between
+}
+.input{
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.addBtn{
+    width: 30%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}

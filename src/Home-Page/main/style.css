@@ -1,0 +1,14 @@
+.list_task{
+    border: 1px solid black;
+    margin-top: 20px;
+    
+    border-radius: 5px;
+}
+.list_header{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.list_content{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
