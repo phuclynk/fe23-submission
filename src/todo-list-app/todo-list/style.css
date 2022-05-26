@@ -1,5 +1,5 @@
 .todo-list .checked {
-	
+	text-decoration: line-through;
 }
 .todo-list{
 	margin: 20px;
