@@ -12,10 +12,10 @@ export function TaskItem() {
 				<Add add="Add"></Add>
 				<div className="list">
 					<Panel panel="Todo List"></Panel>
-					<TodoList todo="Test React Ant Design Todo List"></TodoList>
-					<TodoList todo="Write About React And Ant Design"></TodoList>
-					<TodoList todo="Finalize Presentation"></TodoList>
-					<TodoList todo="Book Flights To Ireland"></TodoList>
+					<TodoList done={false} todo="Test React Ant Design Todo List"></TodoList>
+					<TodoList done={false} todo="Write About React And Ant Design"></TodoList>
+					<TodoList done={true} todo="Finalize Presentation"></TodoList>
+					<TodoList done={false} todo="Book Flights To Ireland"></TodoList>
 				</div>
 			</div>
 		</>
