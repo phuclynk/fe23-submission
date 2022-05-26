@@ -1,0 +1,18 @@
+.todo-list-item {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: auto;
+    align-items: center;
+    border-bottom: 1px solid rgba(236, 226, 226, 0.856);
+}
+
+.todo-list-item-description {
+    width: 100%;
+    text-align: left;
+}
+
+.todo-list-item-description.checked {
+    text-decoration: line-through;
+}

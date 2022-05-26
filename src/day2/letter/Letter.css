@@ -1,0 +1,11 @@
+.letter {
+    color: white;
+    background-color: green;
+    display: inline-block;
+    padding: 30px;
+    border-Radius: 20px;
+    box-Shadow: 4px 6px #707070;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 50px;
+}
