@@ -1,0 +1,19 @@
+.todo_header {
+    width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.todo_header input{
+    width: 75%;
+    margin-right: 20px;
+    padding: 5px 0;
+}
+
+.todo_header button {
+    width: 20%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
