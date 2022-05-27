@@ -1,11 +1,13 @@
 
 import './App.css';
-import {Header} from './todo-list/add-bar/header-todo/Header'
+import {InputAdd} from './todo-list/inputAdd/InputAdd'
+import { Body } from './todo-list/list-body/body/Body'
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <InputAdd />
+      <Body />
     </div>
   );
 }
