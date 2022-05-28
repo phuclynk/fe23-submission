@@ -6,7 +6,7 @@ import { Body } from './todo-list/list-body/body/Body'
 function App() {
   return (
     <div className="App">
-      <InputAdd />
+      <InputAdd /><br/>
       <Body />
     </div>
   );
