@@ -5,3 +5,12 @@
 	width: 500px;
 	padding: 5px 5px;
 }
+.add button{
+	margin-left: 50px;
+	padding: 5px 50px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: rgb(21, 70, 244);
+}

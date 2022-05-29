@@ -1,13 +1,20 @@
 import React from "react";
+import { AiFillDelete } from "react-icons/ai";
 
 export default function TodoList(props) {
    return (
       <>
          <div className="todo-list">
-            <input checked={props.done} type="checkbox" />
-            <span className={`desc ${props.done ? 'checked' : ''}`}>{props.todo}</span>
-            <button>D</button><hr />
+            <input onClick={() => props.completeTodo(props.todo.id)} type="checkbox" />
+            <p className={`desc ${props.todo.done ? 'checked' : ''}`}>{props.todo.text}</p>
+            <button>
+               <AiFillDelete
+                  onClick={() => { props.removeTodo(props.todo.id) }}
+               >
+               </AiFillDelete>
+            </button><hr />
          </div>
+
       </>
    )
 }

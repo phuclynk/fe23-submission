@@ -4,6 +4,23 @@
 .todo-list{
 	margin: 20px;
 }
+.todo-list input{
+	float: left;
+	margin-right: 10px;
+}
 .todo-list button {
 	float: right;
+	position: relative;
+	bottom: 40px;
+	font-size: 20px;
+	border: none;
+	background-color: #FF5D5D;
+	padding: 6px 8px;
+	color: #333;
+	border-radius: 5px;
+}
+.todo-list .desc{
+	width: 550px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
