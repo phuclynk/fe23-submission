@@ -1,4 +1,4 @@
-# 1st exercise
+# 1st grade exercise
 *Nguyễn Bảo Quân
 *FE23 React JS
 
