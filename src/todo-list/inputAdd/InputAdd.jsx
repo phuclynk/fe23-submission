@@ -5,10 +5,10 @@ import { PlusCircleOutlined } from '@ant-design/icons';
 import './Style.css'
 
 export function InputAdd() {
-    return <div className="inline-row">
+    return <form className="inline-row">
         <Input placeholder="Basic usage" />
         <Button type="submit" shape="round" icon={<PlusCircleOutlined />}>
         Add
       </Button>
-    </div>
+    </form>
 }
