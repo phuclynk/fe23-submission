@@ -7,7 +7,7 @@ import './Style.css'
 export function InputAdd() {
     return <div className="inline-row">
         <Input placeholder="Basic usage" />
-        <Button type="primary" shape="round" icon={<PlusCircleOutlined />}>
+        <Button type="submit" shape="round" icon={<PlusCircleOutlined />}>
         Add
       </Button>
     </div>

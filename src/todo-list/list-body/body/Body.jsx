@@ -5,7 +5,7 @@ import { DeleteOutlined  } from '@ant-design/icons';
 import { Button } from 'antd';
 
 export function Body(){
-    return  <div className="BodyL">
+    return  <form className="BodyL">
                 <div className="boxTest">
                     <Checkbox /> 
                     <span>Book flights to Ireland</span>
@@ -16,10 +16,10 @@ export function Body(){
                     <span>Write About React And AntDesign</span>
                     <Button type="primary" shape="circle" icon={<DeleteOutlined  />} />
                 </div>
-                <div className="boxTest">
+                <div className="boxTest1">
                     <Checkbox /> 
                     <span>Test React Ant Design Todo List</span>
                     <Button type="primary" shape="circle" icon={<DeleteOutlined  />} />
                 </div>
-            </div>
+            </form>
 }
