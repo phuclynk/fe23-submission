@@ -9,5 +9,24 @@
 <body>
    <h1>Hello world</h1>
    <h2>truong duc vien</h2>
+
+   <input id="input" type="text">
+   <button id="btn">Add</button>
+
+   <div id="result">
+   </div>
+
+   <script>
+      btn.onclick = ()=>{
+         let inputVal = document.getElementById('input').value;
+         result.innerHTML = `
+            <div>
+               <input type="checkbox">
+               <span>${inputVal}</span>
+            </div>
+         `
+         + result.innerHTML;
+      }
+   </script>
 </body>
 </html>

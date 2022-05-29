@@ -6,20 +6,45 @@
 .container__list__item div:last-child{
    border-bottom: unset 
 }
-.container__list__item div input{
-   margin: 9px
+.container__list__item div .check{
+   position: absolute;
+   font-size: 13px;
+   margin: 9px;
+}
+.container__list__item div .check:hover,
+.container__list__item button:hover{
+   cursor: pointer;
+   transform: scale(1.1);
 }
 .container__list__item div span{
-   flex-basis: 90%;
+   position: relative;
+   left: 30px;
+   flex-basis: 85%;
    text-align: left;
    line-height: 30px;
+   font-size: 14px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.container__list__item div span::first-letter{
+   text-transform: capitalize;
 }
 .container__list__item button{
+   position: relative;
+   left: 20px;
    width: 18px;
    height: 18px;
    padding: 0;
    border: unset;
    border-radius: 3px;
-   margin: 5px;
+   margin: 5px 5px 5px 20px;
+   background: unset;
    color: red;
+   cursor: pointer;
+}
+
+
+.linethrough-text{
+   text-decoration: line-through;
 }

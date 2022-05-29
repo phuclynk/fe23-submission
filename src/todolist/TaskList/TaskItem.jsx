@@ -1,15 +1,22 @@
 import './TaskItem.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 export default function TaskItem (props){
+   let getCheck = (event)=>{
+      props.updateTask(props.num, true)
+   }
+
+   let handleDeleteTask = ()=>{
+      props.deleteTask(props.num)
+   }
+
+
    return(
       <div>
-         <input type='checkbox' />
-         <span>- {props.item}</span>
-         <button>
-            <FontAwesomeIcon icon={faTrashCan} />
+         <i onClick={getCheck} title='Check done' className="check fa-solid fa-note-sticky"></i>
+         <span data-done={props.done} title={props.content}>{props.content}</span>
+         <button onClick={handleDeleteTask}>
+            <i className="delete fa-solid fa-trash-can"></i>
          </button>
       </div>
    )
-} 
+}  

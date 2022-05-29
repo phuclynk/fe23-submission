@@ -21,3 +21,7 @@
    background-color: rgb(34, 126, 255);
    color: white;
 }
+.container__title button:hover{
+   cursor: pointer;
+   background-color: rgb(11, 104, 236);
+}
