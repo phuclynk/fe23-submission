@@ -1,0 +1,22 @@
+.todo {
+    display: block;
+    height: 40px;
+    padding-top: 20px;
+    border-bottom:1px solid black ;
+    
+}
+
+.todo-item {
+    margin-left: 20px;
+}
+.trash-btn {
+    float: right;
+    margin-right: 20px;
+}
+
+
+.todo-item,
+.complete-btn,
+.trash-btn {
+    display: inline;
+}

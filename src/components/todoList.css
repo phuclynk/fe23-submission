@@ -1,0 +1,12 @@
+.todo-container {
+    background-color: white;
+    margin: 10px;
+}
+
+.todo-list {
+    padding: 0 20px;
+}
+.todo-list-2 {
+    width: 540px;
+    padding: 0;
+}
