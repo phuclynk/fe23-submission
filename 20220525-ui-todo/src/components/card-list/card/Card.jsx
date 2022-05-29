@@ -8,7 +8,7 @@ export function Card(props) {
         <div className="card-top">
           <button className="card-label">{props.cardLabel}</button>
           <h3 className="card-title">{props.title}</h3>
-          <p> {props.subTitle}</p>
+          <p className="card-sub-title"> {props.subTitle}</p>
         </div>
         <div className="card-bottom">
           <div className="card-user">
