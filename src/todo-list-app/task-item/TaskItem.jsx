@@ -4,7 +4,28 @@ import Search from "../search-input/SearchInput";
 import TodoList from "../todo-list/TodoList";
 
 export function TaskItem() {
-   const [todos, setTodos] = useState([])
+   const [todos, setTodos] = useState([
+      // {
+      //    id: 1,
+      //    done: false,
+      //    text: 'Test React Ant Design Todo List'
+      // },
+      // {
+      //    id: 2,
+      //    done: false,
+      //    text: 'Write About React And Ant Design'
+      // },
+      // {
+      //    id: 3,
+      //    done: true,
+      //    text: 'Finalze Presentation'
+      // },
+      // {
+      //    id: 4,
+      //    done: false,
+      //    text: 'Book Flights To Ireland'
+      // },
+   ])
    const addTodo = (text) => {
       let id = 1;
       if (todos.length > 0) {

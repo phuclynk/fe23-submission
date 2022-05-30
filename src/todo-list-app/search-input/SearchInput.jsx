@@ -1,24 +1,12 @@
 import React, { useState } from "react";
 import { GrAddCircle } from 'react-icons/gr';
 
-// const btnAdd = document.getElementById('btn');
-// const search = document.getElementById('search-input');
-// search.addEventListener("keyup", (e) => {
-//    const value = e.currentTarget.value;
-
-//    btnAdd.disabled = false
-
-//    if (value === "") {
-//       btnAdd.disabled = true
-//    }
-// })
-
 export default function Search(props) {
-   const [input, setInput] = useState('')
+   const [valueInput, setInput] = useState('')
 
    const handleSubmit = (e) => {
       e.preventDefault()
-      props.addTodo(input)
+      props.addTodo(valueInput)
       setInput("")
    }
 
@@ -29,13 +17,13 @@ export default function Search(props) {
                <input
                   autoComplete="off"
                   id="search-input"
-                  value={input}
+                  value={valueInput}
                   onChange={(e) => setInput(e.target.value)}
                   type="search"
                   placeholder={props.pl}
                />
             </div>
-            <div className="add"><button id="btn" type="submit"><GrAddCircle /> Add</button></div>
+            <div className="add"><button disabled={valueInput === ''} id="btn" type="submit"><GrAddCircle /> Add</button></div>
          </form>
       </>
    )
