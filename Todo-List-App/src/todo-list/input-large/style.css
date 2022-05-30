@@ -21,9 +21,15 @@
   margin-top: 10px;
   padding-left: 35px;
 }
+
 .icon-left {
   position: absolute;
   padding: 10px;
   min-width: 40px;
   top: 35px;
+}
+
+.task-error {
+  font-size: 9px;
+  color: red;
 }

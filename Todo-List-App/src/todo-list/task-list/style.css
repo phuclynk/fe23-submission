@@ -1,0 +1,3 @@
+.task-list .task-item:last-child {
+    border-bottom: none;
+}

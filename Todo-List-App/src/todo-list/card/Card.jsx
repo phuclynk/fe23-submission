@@ -5,8 +5,8 @@ import { CardBody } from "./card-body/CardBody";
 export function Card(props) {
     const cardStyle = {
         width: "90%",
-        maxHeight: "500px",
-        overFlow: "auto",
+        // maxHeight: "500px",
+        // overFlow: "auto",
         margin: "50px auto",
     }
     return <div style={cardStyle}>
