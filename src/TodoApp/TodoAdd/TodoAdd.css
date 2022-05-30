@@ -30,6 +30,9 @@
     justify-content: center;
     cursor: pointer;
 }
+/* .todo-add-btn svg {
+   
+} */
 .todo-add svg {
     margin-right: 10px;
 }
