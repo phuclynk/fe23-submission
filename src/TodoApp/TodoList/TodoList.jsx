@@ -5,7 +5,7 @@ import "./TodoList.css"
 
 export function TodoList(props) {
     const handleDeleteClick = (itemDeleteFromTodoItem) => {
-        props.handleDeteleToto(itemDeleteFromTodoItem)
+        props.handleDeteleTodo(itemDeleteFromTodoItem)
     }
     // console.log(props, "========props of todolist")
     
@@ -14,7 +14,7 @@ export function TodoList(props) {
             <TodoTitle/>
             <TodoItem dataFromUser2={props.dataFromUser}
                     //   onDeleteClick={handleDeleteClick}
-                      handleDeteleToto={handleDeleteClick}  
+                      handleDeteleTodo={handleDeleteClick}  
             />
         </div>
     )

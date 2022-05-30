@@ -18,7 +18,7 @@ export function TodoApp() {
     } 
     // console.log(jobArr, "==================== jobArr")
 
-    const handleDeteleToto = (jobItem) => {
+    const handleDeteleTodo = (jobItem) => {
         // console.log(jobItem, "=============jobApp")
         const currenJobArr = jobArr.filter((item) => {
             return item.title !== jobItem.title
@@ -33,7 +33,7 @@ export function TodoApp() {
             />
             <TodoList 
             dataFromUser={jobArr}
-            handleDeteleToto = {handleDeteleToto}
+            handleDeteleTodo = {handleDeteleTodo}
             />
         </div>
     )

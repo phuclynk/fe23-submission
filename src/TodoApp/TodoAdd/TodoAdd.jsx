@@ -19,8 +19,8 @@ export function TodoAdd(props) {
             } else {
                 const regex = job.substring(65);
                 const jobSlice = job.replace(regex, '...');
-                console.log(regex);
-                console.log(jobSlice);
+                // console.log(regex);
+                // console.log(jobSlice);
                 const jobs = {      
                     title: jobSlice,
                 }
