@@ -16,7 +16,7 @@ export function TodoItem(props) {
                             <input className="todo-item-input" type="checkbox" checked={jobItem.done} name="" id="" />
                             <span className={`todo-item-description ${jobItem.done ? "checked" : ""}`}>{jobItem.title}</span>
                             <button className="todo-item-btn"
-                                onClick={() => {props.handleDeteleTodo(jobItem)}}
+                                onClick={() => {props.handleDeteleTodoList(jobItem)}}
                             ><FaTrash /></button>  
                         </div>  
                     )                                     

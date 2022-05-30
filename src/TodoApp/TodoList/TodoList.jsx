@@ -4,8 +4,8 @@ import { TodoTitle } from "./TodoTitle/TodoTitle";
 import "./TodoList.css"
 
 export function TodoList(props) {
-    const handleDeleteClick = (itemDeleteFromTodoItem) => {
-        props.handleDeteleTodo(itemDeleteFromTodoItem)
+    const handleDeleteTodoMediate = (itemDeleteFromTodoItem) => {
+        props.handleDeteleTodoApp(itemDeleteFromTodoItem)
     }
     // console.log(props, "========props of todolist")
     
@@ -14,7 +14,7 @@ export function TodoList(props) {
             <TodoTitle/>
             <TodoItem dataFromUser2={props.dataFromUser}
                     //   onDeleteClick={handleDeleteClick}
-                      handleDeteleTodo={handleDeleteClick}  
+                      handleDeteleTodoList = {handleDeleteTodoMediate}  
             />
         </div>
     )

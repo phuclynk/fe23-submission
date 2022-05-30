@@ -33,7 +33,7 @@ export function TodoApp() {
             />
             <TodoList 
             dataFromUser={jobArr}
-            handleDeteleTodo = {handleDeteleTodo}
+            handleDeteleTodoApp = {handleDeteleTodo}
             />
         </div>
     )
