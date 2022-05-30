@@ -30,3 +30,8 @@
 .todo-item-description.checked {
     text-decoration: line-through;
 }
+.todo-item-description {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

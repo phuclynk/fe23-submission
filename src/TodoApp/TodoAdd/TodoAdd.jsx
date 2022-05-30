@@ -11,21 +11,10 @@ export function TodoAdd(props) {
         if(!job) {
             alert("Please enter job title!")
         } else {
-            if(job.length <= 65){
                 const jobs = {      
                     title: job,
                 }
                 props.handleAddJob(jobs)      
-            } else {
-                const regex = job.substring(65);
-                const jobSlice = job.replace(regex, '...');
-                // console.log(regex);
-                // console.log(jobSlice);
-                const jobs = {      
-                    title: jobSlice,
-                }
-                props.handleAddJob(jobs)      
-            } 
         }
     
         setJob("");
