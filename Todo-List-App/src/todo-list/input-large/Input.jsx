@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import "./style.css";
 import { TagsOutlined } from "@ant-design/icons";
 export function InputLarge(props) {
-  const [newTask, setNewTask] = useState('')
 
-  const handleLostFocus = () => {
-    if (newTask.trim() === "") {
+  const changeTaskName = (taskName) => {
+    if (taskName.trim() === "") {
       return;
     }
-    props.onChangeNewTask(newTask.trim());
+    props.onChangeNewTask(taskName.trim());
   }
 
   return (
@@ -18,8 +17,8 @@ export function InputLarge(props) {
         className="input-large"
         type="text"
         placeholder={props.placeholder}
-        onChange={(e) => { setNewTask(e.target.value) }}
-        onBlur={handleLostFocus}
+        onChange={(e) => { changeTaskName(e.target.value) }}
+        value={props.inputTask}
       />
       <small className='task-error'>{props.taskError}</small>
     </div>

@@ -6,7 +6,11 @@ export function ButtonSmall(props) {
     const iconStyle = {
         color: 'red'
     }
-    return <button className="button-small">
+    const deleteTask = () => {
+        props.deleteTask();
+    }
+
+    return <button className="button-small" onClick={deleteTask}>
         {/* <i className={props.iconClass}></i> */}
         <DeleteOutlined style={iconStyle} />
     </button>;

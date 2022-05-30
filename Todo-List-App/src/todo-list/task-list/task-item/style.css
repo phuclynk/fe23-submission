@@ -1,15 +1,32 @@
 .task-item {
   border-bottom: solid 1px #d2d2d2;
-  padding: 30px;
+  padding: 25px;
   display: flex;
   position: relative;
+  line-height: 25px;
 }
 
 .label-task-name {
   margin-left: 20px;
+  font-size: 16px;
+  color: #000;
+  word-break: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 500px;
+  text-align: left;
 }
 
 .label-task-name-done {
   margin-left: 20px;
+  font-size: 16px;
   text-decoration: line-through;
+  color: blue;
+  word-break: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 500px;
+  text-align: left;
 }
