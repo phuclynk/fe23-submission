@@ -19,7 +19,7 @@ export function Task(props) {
         <Checkbox onChange={(e) => { changeStatusTask(e.target.checked) }}></Checkbox>
       }
       <label
-        className={props.done ? "label-task-name-done" : "label-task-name"}
+        className={`label-task-name ${props.done ? "done" : ""}`}
       >
         {props.taskName}
       </label>

@@ -18,15 +18,7 @@
   text-align: left;
 }
 
-.label-task-name-done {
-  margin-left: 20px;
-  font-size: 16px;
+.done {
   text-decoration: line-through;
   color: blue;
-  word-break: break-word;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 500px;
-  text-align: left;
 }

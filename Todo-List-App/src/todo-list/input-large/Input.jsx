@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import "./style.css";
 import { TagsOutlined } from "@ant-design/icons";
 export function InputLarge(props) {
-
+  console.log(props);
   const changeTaskName = (taskName) => {
-    if (taskName.trim() === "") {
-      return;
-    }
     props.onChangeNewTask(taskName.trim());
   }
 
