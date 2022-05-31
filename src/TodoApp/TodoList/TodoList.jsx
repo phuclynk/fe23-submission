@@ -4,11 +4,18 @@ import { TodoTitle } from "./TodoTitle/TodoTitle";
 import "./TodoList.css"
 
 export function TodoList(props) {
-
     return (
         <div className="todo-list">
             <TodoTitle/>
-            {props.todoList.map(item => <TodoItem key={item.id} {...item}/>)}
+            {/* Truyền callBack onDeleteTodoItem thêm lần nữa vào TodoItem để lấy chính xác id của item cần xóa */}
+            {/* Tương tự như hàm onDeleteTodoItem truyền thêm hàm onUpdateTodoItem vào tới TodoItem để lấy data */}
+            {
+                props.todoList.map(item => <TodoItem 
+                    onUpdate={props.onUpdateTodoItem} 
+                    onDelete={props.onDeleteTodoItem} 
+                    key={item.id} 
+                    {...item}/>)
+            }
         </div>
     )
 }
