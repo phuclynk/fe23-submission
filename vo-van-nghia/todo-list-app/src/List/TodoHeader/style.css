@@ -1,0 +1,8 @@
+.todo-header {
+   width: 100%;
+   padding: 20px;
+   /* padding: 0px 5px; */
+   border-bottom: 1px solid #000;
+   font-size: 20px;
+   font-weight: 800;
+}
