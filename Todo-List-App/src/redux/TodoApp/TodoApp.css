@@ -1,0 +1,132 @@
+.todo-app {
+    width: 900px;
+    height: 600px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    font-family: sans-serif;
+}
+
+.form-new-task {
+    line-height: 50px;
+}
+
+.form-new-task label {
+    font-weight: bold;
+    display: inline-block;
+    width: 110px;
+}
+
+.form-new-task input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #333;
+    border-radius: none;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.invalid-input {
+    border-bottom: solid 1px red !important;
+}
+
+.valid-input {
+    border-bottom: solid 1px green !important;
+}
+
+.button-submit {
+    background-color: #675BF1;
+    color: #fff;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.all-task {
+    padding: 10px 10px 10px 40px;
+    display: flex;
+}
+
+.list-task {
+    width: 100%;
+}
+
+.list-task ul {
+    display: flex;
+    list-style: none;
+}
+
+.list-task ul li {
+    padding: 10px;
+    margin: 5px;
+    border: solid 1px #675BF1;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #675BF1;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.add-new-task {
+    padding: 10px 10px 10px 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.edit-task {
+    padding: 10px 10px 10px 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.action-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-button-label {
+    width: 50px !important;
+}
+
+.radio-button-input {
+    width: 30px !important;
+}
