@@ -48,7 +48,7 @@ export default function AddNewTask(props) {
                 <br />
 
                 <label>Created at</label>
-                <input label="Created at" defaultValue="" placeholder="Created at" {...register("createdAt", { required: true })} />
+                <input type="date" label="Created at" defaultValue="" placeholder="Created at" {...register("createdAt", { required: true })} />
                 {errors.createdAt && <span className="error-msg">Creation time is required</span>}
                 <br />
 

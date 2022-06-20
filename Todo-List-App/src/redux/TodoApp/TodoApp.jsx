@@ -109,15 +109,17 @@ export const TodoApp = (props) => {
                 <Navbar />
                 <div className="container">
                     <SideBar></SideBar>
-                    <Routes>
-                        <Route path="/" element={<AllTask />} />
-                        <Route path="/new-task" element={<NewTask />} />
-                        <Route path="/doing-task" element={<DoingTask />} />
-                        <Route path="/done-task" element={<DoneTask />} />
-                        <Route path="/add-new-task" element={<AddNewTask />} />
-                        <Route path="/edit-task/:id" element={<EditTask />} />
-                        <Route path="/:search" element={<SearchTask />} />
-                    </Routes>
+                    <div>
+                        <Routes>
+                            <Route path="/" element={<AllTask />} />
+                            <Route path="/new-task" element={<NewTask />} />
+                            <Route path="/doing-task" element={<DoingTask />} />
+                            <Route path="/done-task" element={<DoneTask />} />
+                            <Route path="/add-new-task" element={<AddNewTask />} />
+                            <Route path="/edit-task/:id" element={<EditTask />} />
+                            <Route path="/:search" element={<SearchTask />} />
+                        </Routes>
+                    </div>
                 </div>
             </BrowserRouter>
         </div>

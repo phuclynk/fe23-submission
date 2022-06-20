@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TodoItem } from "../TodoList/TodoItem/TodoItem";
 import ReactPaginate from 'react-paginate';
 
-export default function DoingTask() {
+export default function AllTask() {
     const todoList = useSelector(state => state.todo.todoList);
     const [currentItems, setCurrentItems] = useState(todoList);
     const [pageCount, setPageCount] = useState(0);

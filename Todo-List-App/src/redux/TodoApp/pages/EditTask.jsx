@@ -13,7 +13,7 @@ export default function EditTask() {
     const location = useLocation();
     const navigate = useNavigate();
     const [editTask, setEditTask] = useState(location.state);
-    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, reset, setValue, formState: { errors } } = useForm();
     const dispatch = useDispatch();
     const onSubmit = (data) => {
         const newTodoItem = {
@@ -58,6 +58,11 @@ export default function EditTask() {
         });
     }
     const onResetItem = () => {
+        setValue('title', location.state.title, { shouldDirty: false });
+        setValue('creator', location.state.creator, { shouldDirty: false });
+        setValue('createdAt', location.state.createdAt, { shouldDirty: false });
+        setValue('description', location.state.description, { shouldDirty: false });
+        setValue('status', location.state.status, { shouldDirty: false });
         setEditTask(location.state);
     }
     const onStatusChange = (e) => {
@@ -78,7 +83,7 @@ export default function EditTask() {
                 <br />
 
                 <label>Created at</label>
-                <input className={`${errors.createdAt ? "invalid-input" : "valid-input"}`} label="Created at" defaultValue={editTask.createdAt} placeholder="Created at" {...register("createdAt", { required: true })} />
+                <input type="date" className={`${errors.createdAt ? "invalid-input" : "valid-input"}`} label="Created at" defaultValue={editTask.createdAt} placeholder="Created at" {...register("createdAt", { required: true })} />
                 {errors.createdAt && <span className="error-msg">Creation time is required</span>}
                 <br />
 
