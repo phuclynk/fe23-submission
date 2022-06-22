@@ -1,7 +1,0 @@
-.cards {
-  --spacing: 20px;
-  --columns: 3;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--spacing));
-}
